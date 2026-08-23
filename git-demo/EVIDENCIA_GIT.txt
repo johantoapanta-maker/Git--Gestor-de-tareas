@@ -1,0 +1,86 @@
+=== git log --oneline --all --graph --decorate ===
+*   a98bc55 (HEAD -> main) merge: fusionar rama desarrollo (completar_tarea y pruebas) en main
+|\  
+| * 2cff785 (desarrollo) test: agregar prueba para completar_tarea
+| * 45c66b1 feat: implementar completar_tarea en rama desarrollo
+|/  
+* 1905097 chore: agregar .gitignore para archivos temporales de Python
+* 5f2039a feat: agregar metodo listar_tareas para mostrar el listado
+* 1a4abae feat: implementar GestorTareas con metodo agregar_tarea
+* 6325268 feat: crear clase Tarea con atributos basicos
+* d43295d docs: agregar README inicial del proyecto
+
+=== git branch -a ===
+  desarrollo
+* main
+
+=== git log (detallado, main) ===
+commit a98bc55fcd268337cf38b04bf53a886d1c9b01e5
+Merge: 1905097 2cff785
+Author: Equipo CENESTUR <equipo@cenestur.edu.ec>
+Date:   Sun Aug 23 13:21:10 2026 +0000
+
+    merge: fusionar rama desarrollo (completar_tarea y pruebas) en main
+
+commit 2cff7852b28c464fde275214caeb980383eb7784
+Author: Equipo CENESTUR <equipo@cenestur.edu.ec>
+Date:   Sun Aug 23 13:21:08 2026 +0000
+
+    test: agregar prueba para completar_tarea
+
+ tests/test_gestor_tareas.py | 10 ++++++++++
+ 1 file changed, 10 insertions(+)
+
+commit 45c66b19abdd54a93637a738a571f22f83cec66a
+Author: Equipo CENESTUR <equipo@cenestur.edu.ec>
+Date:   Sun Aug 23 13:21:04 2026 +0000
+
+    feat: implementar completar_tarea en rama desarrollo
+
+ src/gestor_tareas.py | 7 +++++++
+ 1 file changed, 7 insertions(+)
+
+commit 1905097bee9c742f51c3476600210ce641c8610a
+Author: Equipo CENESTUR <equipo@cenestur.edu.ec>
+Date:   Sun Aug 23 13:20:55 2026 +0000
+
+    chore: agregar .gitignore para archivos temporales de Python
+
+ .gitignore | 3 +++
+ 1 file changed, 3 insertions(+)
+
+commit 5f2039a3c4dd9c03ec414d52918f4d12c8e5d54b
+Author: Equipo CENESTUR <equipo@cenestur.edu.ec>
+Date:   Sun Aug 23 13:20:41 2026 +0000
+
+    feat: agregar metodo listar_tareas para mostrar el listado
+
+ src/gestor_tareas.py | 5 +++++
+ 1 file changed, 5 insertions(+)
+
+commit 1a4abae759d650bc9ba2248b094a55fa6f59e682
+Author: Equipo CENESTUR <equipo@cenestur.edu.ec>
+Date:   Sun Aug 23 13:20:32 2026 +0000
+
+    feat: implementar GestorTareas con metodo agregar_tarea
+
+ src/gestor_tareas.py | 15 +++++++++++++++
+ 1 file changed, 15 insertions(+)
+
+commit 63252683fa4196ad2ddb8a682a67fe63c1c86429
+Author: Equipo CENESTUR <equipo@cenestur.edu.ec>
+Date:   Sun Aug 23 13:20:28 2026 +0000
+
+    feat: crear clase Tarea con atributos basicos
+
+ src/tarea.py | 11 +++++++++++
+ 1 file changed, 11 insertions(+)
+
+commit d43295d8047520dee958488630d9e821548e7702
+Author: Equipo CENESTUR <equipo@cenestur.edu.ec>
+Date:   Sun Aug 23 13:20:25 2026 +0000
+
+    docs: agregar README inicial del proyecto
+
+ README.md | 8 ++++++++
+ 1 file changed, 8 insertions(+)
